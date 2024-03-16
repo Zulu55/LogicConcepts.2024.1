@@ -2,9 +2,9 @@
 
 do
 {
-    var a = ConsoleExtension.GetInt("Ingrese primer número: ");
+    var a = ConsoleExtension.GetInt("Ingrese primer número : ");
     var b = ConsoleExtension.GetInt("Ingrese segundo número: ");
-    var c = ConsoleExtension.GetInt("Ingrese tercer número: ");
+    var c = ConsoleExtension.GetInt("Ingrese tercer número : ");
 
     if (a > b && a > c)
     {
