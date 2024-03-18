@@ -44,7 +44,6 @@ do
     {
         Console.WriteLine($"El año: {year}, NO {message} biciesto.");
     }
-
     do
     {
         answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]í, [N]o?: ", options);
