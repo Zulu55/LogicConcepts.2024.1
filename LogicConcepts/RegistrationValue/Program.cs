@@ -1,5 +1,4 @@
-﻿using System;
-using Shared;
+﻿using Shared;
 
 var answer = string.Empty;
 var options = new List<string> { "s", "n" };
@@ -64,4 +63,3 @@ decimal CalculateRegistrationValue(int credits, decimal creditValue, int stratum
 
     return value;
 }
-
