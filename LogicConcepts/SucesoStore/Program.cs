@@ -1,5 +1,4 @@
-﻿using System.Security.AccessControl;
-using Shared;
+﻿using Shared;
 
 var answer = string.Empty;
 var options = new List<string> { "s", "n" };
@@ -27,14 +26,13 @@ do
     var PA = ConsoleExtension.GetInt("Periodo de almacenamiento (días).......................................: ");
     var VOL = ConsoleExtension.GetInt("Volumen (litros).......................................................: ");
 
-
     var maOptions = new List<string> { "n", "c", "e", "g" };
     var MA = string.Empty;
     do
     {
         MA = ConsoleExtension.GetValidOptions("Medio de almacenamiento [N]evera, [C]ongelador, [E]estanteria, [G]uacal: ", maOptions);
     } while (!maOptions.Any(x => x.Equals(MA, StringComparison.CurrentCultureIgnoreCase)));
-    
+
     Console.WriteLine("*** CALCULOS ***");
     var CA = GetCostoAlmacenamiento(TP, CC, TC, PC, VOL);
     var PDP = GetPorcentajeDeprecicionDelProducto(PA);
