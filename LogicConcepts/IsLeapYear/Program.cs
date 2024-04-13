@@ -21,29 +21,9 @@ do
         message = "fue";
     }
 
+    var isLeapYear = DateUtilities.IsLeapYear(year);
+    Console.WriteLine($"El año: {year}, { (isLeapYear ? "SI" : "NO") } {message} biciesto.");
 
-    if ( year % 4 == 0)
-    {
-        if (year % 100 == 0 )
-        {
-            if ( year % 400 == 0)
-            {
-                Console.WriteLine($"El año: {year}, SI {message} biciesto.");
-            }
-            else
-            {
-                Console.WriteLine($"El año: {year}, NO {message} biciesto.");
-            }
-        }
-        else
-        {
-            Console.WriteLine($"El año: {year}, SI {message} biciesto.");
-        }
-    }
-    else
-    {
-        Console.WriteLine($"El año: {year}, NO {message} biciesto.");
-    }
     do
     {
         answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]í, [N]o?: ", options);
