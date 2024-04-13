@@ -14,12 +14,9 @@
 
         public static bool IsPrime(int n)
         {
-            for (var i = 2; i <= Math.Sqrt(n); i++)
+            for (int i = 2; i <= Math.Sqrt(n); i++)
             {
-                if (n % i == 0)
-                {
-                    return false;
-                }
+                if (n % i == 0) return false;
             }
             return true;
         }

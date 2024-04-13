@@ -1,29 +1,18 @@
-﻿using System.Data.SqlTypes;
-using Shared;
+﻿using Shared;
 
 var answer = string.Empty;
 var options = new List<string> { "s", "n" };
 
 do
 {
-    // Data input
-    Console.BackgroundColor = ConsoleColor.Blue;
-    Console.Clear();
-    Console.WriteLine("*** ES PRIMO ***");
-    var number = ConsoleExtension.GetInt("Ingrese número: ");
-
-    // Do process
-    var isPrime = MyMath.IsPrime(number);
-
-    // Show results
-    Console.BackgroundColor = ConsoleColor.Black;
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.WriteLine($"El número: {number} { (isPrime ? "SI" : "NO") } es primo.");
-    Console.BackgroundColor = ConsoleColor.Blue;
-    Console.ForegroundColor = ConsoleColor.White;
+    var n = ConsoleExtension.GetInt("Ingresa número: ");
+    var isPrime = MyMath.IsPrime(n);
+    Console.WriteLine($"El número: {n} {(isPrime ? "SI" : "NO")} es primo.");
 
     do
     {
         answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]í, [N]o?: ", options);
+        Console.WriteLine();
     } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
 } while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+
