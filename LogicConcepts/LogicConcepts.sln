@@ -119,6 +119,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "26", "26", "{0CFA6328-6AD0-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecialOrderArray", "SpecialOrderArray\SpecialOrderArray.csproj", "{57CB1426-1E17-4E38-850F-70907E6318B8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "27", "27", "{0E1E10B7-FFE2-446A-9B51-750E6DA89432}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromePhrases", "PalindromePhrases\PalindromePhrases.csproj", "{2E999AEE-367A-41F6-B34A-33C4190C31B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -245,6 +249,10 @@ Global
 		{57CB1426-1E17-4E38-850F-70907E6318B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57CB1426-1E17-4E38-850F-70907E6318B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57CB1426-1E17-4E38-850F-70907E6318B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E999AEE-367A-41F6-B34A-33C4190C31B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E999AEE-367A-41F6-B34A-33C4190C31B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E999AEE-367A-41F6-B34A-33C4190C31B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E999AEE-367A-41F6-B34A-33C4190C31B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -282,6 +290,7 @@ Global
 		{2346BBB9-C3F3-40A7-85F0-1803F24A9683} = {EA43A3F6-4871-491F-974F-51E642DBC196}
 		{65DAFD45-D40D-4AD4-A0CE-17D1927E191D} = {720B41B6-A551-48C2-98B4-87EC09FB6257}
 		{57CB1426-1E17-4E38-850F-70907E6318B8} = {0CFA6328-6AD0-4DE1-AC85-158FF9CC0F8F}
+		{2E999AEE-367A-41F6-B34A-33C4190C31B2} = {0E1E10B7-FFE2-446A-9B51-750E6DA89432}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {18B3735A-4257-4649-95B7-E2089133A692}
