@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using Shared;
+﻿using Shared;
 
 var answer = string.Empty;
 var options = new List<string> { "s", "n" };
